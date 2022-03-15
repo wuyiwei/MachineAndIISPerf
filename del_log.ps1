@@ -1,0 +1,1 @@
+Get-ChildItem -Path G:\zxy\process_cpu -Recurse -Include *.log | Where-Object{ $_.LastWriteTime -lt (Get-Date).AddDays(-1)} | Remove-Item
